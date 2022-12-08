@@ -811,7 +811,7 @@ address .contact-link {
     
 
 }
-/* ------------------modal-windou------------- */
+/* ------------------modal-window------------- */
 .backdrop {
     position: fixed;
     top: 0;
@@ -842,6 +842,8 @@ address .contact-link {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    padding: 40px;
+
 }
 
 .bn-close {
@@ -864,7 +866,40 @@ address .contact-link {
 }
 .icon-close {
     display: block;;
-       
 
 }
 
+.form-title {
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        text-align: center;
+
+        display: block;
+        padding-bottom: 12px;     
+}
+
+.modal-container {
+
+}
+
+.modal-subcontainer {
+
+}
+
+.modal-label {
+    
+}
+
+.modal-input {
+width: 100%;
+height: 40px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+
+}
+
+.modal-ikon {}
