@@ -455,18 +455,15 @@
           <span>Коментар</span>
           <textarea class="modal-input modal-area" id="coment" name="coment" placeholder="Введіть текст"></textarea>
         </label>
-        <div class="modal-check-box">
-          <input class="checkbox visually-hidden" type="checkbox" name="agreed" id="agreed">
-          <label class="check-text" for="agreed">
-            <span class="check-text-mark">
-              <svg class="check-icon" width="11" height="8">
-                <use href="./images/symbol-defs.svg#icon-Vector">
-                </use>
-              </svg> Погоджуюся з розсилкою та приймаю
-            </span>
-            <a class="agreed-link link">Умови договору</a>
-          </label>
-        </div>
+        <label class="form-check-field">
+          <input type="checkbox" class="form-check" name="user_policy" required>
+          <svg class="form-checkbox" width="16" height="15">
+            <use class="form-checkbox-icon" href="./images/symbol-defs.svg#icon-icon-check"></use>
+          </svg>
+          <span class="form-field-text">Погоджуюся з розсилкою та приймаю
+            <a href="#" class="form-field-link">Умови договору</a>
+          </span>
+        </label>
         <div class="modal-box-bn">
           <button class="modal-button  modal-input" type="submit"> Відправити</button>
         </div>
