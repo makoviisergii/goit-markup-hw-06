@@ -378,6 +378,17 @@ header .contacts {
 
 }
 
+.about-desc {
+    margin-bottom: 0;
+    margin-top: 0px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+}
+
 /* .about-title::before {
     content: "";
     height: 120px;
@@ -387,8 +398,7 @@ header .contacts {
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70px 70px; */
-}
+    background-size: 70px 70px;} */
 
 /* .about-item:nth-child(1) .about-title::before {
     background-image: url(../images/antenna.svg);
@@ -406,13 +416,6 @@ header .contacts {
 .about-item:nth-child(4) .about-title::before {
     background-image: url(../images/astronaut.svg);
 } */
-.about-desc {
-    margin-bottom: 0;
-    margin-top: 0px;
-
-    line-height: 1.71;
-
-}
 
 /* What do we do? */
 
@@ -424,6 +427,7 @@ header .contacts {
 .we-do {
     display: flex;
     justify-content: space-between;
+   
 }
 
 
@@ -436,6 +440,31 @@ header .contacts {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+.we-do-item {
+
+
+}
+.imag-box {
+        position: relative;
+            display: block;
+}
+
+.imag-title {
+    position: absolute;
+    transform: translate(0%, -100%);
+
+    width: 100%;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height:calc(16 / 14);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
 }
 
 
@@ -975,12 +1004,22 @@ address .contact-link {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    fill: #000000;
+
 }
+
+
 
 .icon-close {
     display: block;
-    ;
 
+
+}
+
+.bn-close:hover .icon-close {
+    fill: var(--accent-text-color);
+    transition-property: fill;
+    transition: var(--timing-function);
 }
 
 .form-title {
@@ -1026,13 +1065,14 @@ address .contact-link {
     border-radius: 4px;
     transition-property: border;
     transition: var(--timing-function);
+    outline: none;
 
 }
 
 .modal-ikon {
 
     position: absolute;
-    left: 20px;
+    left: 12px;
     fill: #000000;
 }
 
